@@ -18,12 +18,26 @@ const DoctorCard = ({ doctor }: DoctorCardProps) => {
       .toUpperCase();
   };
 
+  // Array of doctor profile images to use as placeholders
+  const doctorImages = [
+    '/doctor-1.jpg',
+    '/doctor-2.jpg',
+    '/doctor-3.jpg',
+    '/doctor-4.jpg',
+    '/doctor-5.jpg',
+    '/doctor-6.jpg',
+  ];
+
+  // Use deterministic selection of image based on doctor ID
+  const imageIndex = parseInt(doctor.id) % doctorImages.length;
+  const doctorImage = doctorImages[imageIndex];
+
   return (
     <div className="border rounded-lg p-4 md:p-6 mb-4 bg-white hover:shadow-md transition-shadow">
       <div className="flex flex-col md:flex-row gap-4">
         <div className="flex flex-col items-center">
           <Avatar className="h-20 w-20">
-            <AvatarImage src={doctor.photo} alt={doctor.name} />
+            <AvatarImage src={doctorImage} alt={doctor.name} />
             <AvatarFallback>{getInitials(doctor.name)}</AvatarFallback>
           </Avatar>
           <div className="mt-2 text-center">

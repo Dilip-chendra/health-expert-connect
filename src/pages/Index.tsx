@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import FilterSidebar from '@/components/FilterSidebar';
 import DoctorCard from '@/components/DoctorCard';
 import Pagination from '@/components/Pagination';
@@ -255,6 +256,8 @@ const Index = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 };

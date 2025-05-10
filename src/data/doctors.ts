@@ -1,0 +1,135 @@
+
+import { Doctor } from "@/types/doctor";
+
+export const doctors: Doctor[] = [
+  {
+    id: "1",
+    name: "Dr. Suraj Natalapati",
+    photo: "/placeholder.svg",
+    specialization: "General Physician / Internal Medicine Specialist",
+    degrees: "MBBS, MD (INTERNAL MEDICINE)",
+    experience: 10,
+    languages: ["English", "Hindi", "Telugu"],
+    location: "Telangana, Hyderabad",
+    fees: 549,
+    consultationType: ["Virtual"],
+    facility: "Apollo Hospital"
+  },
+  {
+    id: "2",
+    name: "Dr. Lakshmi Sanjitha Kakani",
+    photo: "/placeholder.svg",
+    specialization: "General Physician / Internal Medicine Specialist",
+    degrees: "MBBS, MD (GENERAL MEDICINE)",
+    experience: 8,
+    languages: ["English", "Telugu"],
+    location: "Andhra Pradesh, Visakhapatnam",
+    fees: 549,
+    consultationType: ["Virtual"],
+    facility: "Apollo Hospital"
+  },
+  {
+    id: "3",
+    name: "Dr. Lirisha C",
+    photo: "/placeholder.svg",
+    specialization: "General Physician / Internal Medicine Specialist",
+    degrees: "MBBS, MD (GENERAL MEDICINE)",
+    experience: 8,
+    languages: ["English", "Hindi"],
+    location: "Telangana, Hyderabad",
+    fees: 499,
+    consultationType: ["Virtual"],
+    facility: "Apollo Hospital"
+  },
+  {
+    id: "4",
+    name: "Dr Divya Lekha Gunta",
+    photo: "/placeholder.svg",
+    specialization: "General Practitioner",
+    degrees: "MBBS, MD (PATHOLOGY)",
+    experience: 10,
+    languages: ["English", "Telugu"],
+    location: "Andhra Pradesh, Visakhapatnam",
+    fees: 649,
+    consultationType: ["Virtual"],
+    facility: "Apollo Hospital"
+  },
+  {
+    id: "5",
+    name: "Dr. Mohammed Huzaf Ul Arifeen",
+    photo: "/placeholder.svg",
+    specialization: "General Practitioner",
+    degrees: "MBBS",
+    experience: 3,
+    languages: ["English", "Hindi", "Telugu"],
+    location: "Telangana, Hyderabad",
+    fees: 399,
+    consultationType: ["Virtual", "Hospital"],
+    facility: "Other Clinics"
+  },
+  {
+    id: "6",
+    name: "Dr. Siri Nallapu",
+    photo: "/placeholder.svg",
+    specialization: "General Practitioner",
+    degrees: "MBBS",
+    experience: 5,
+    languages: ["English", "Telugu"],
+    location: "Telangana, Hyderabad",
+    fees: 499,
+    consultationType: ["Virtual", "Hospital"],
+    facility: "Other Clinics"
+  },
+  {
+    id: "7",
+    name: "Dr. Shubham Chauhan",
+    photo: "/placeholder.svg",
+    specialization: "General Practitioner",
+    degrees: "MBBS",
+    experience: 4,
+    languages: ["English", "Hindi"],
+    location: "Uttar Pradesh, Lucknow",
+    fees: 499,
+    consultationType: ["Virtual", "Hospital"],
+    facility: "Other Clinics"
+  },
+  {
+    id: "8",
+    name: "Dr. Immanuel Raj",
+    photo: "/placeholder.svg",
+    specialization: "General Practitioner",
+    degrees: "MBBS",
+    experience: 6,
+    languages: ["English", "Tamil"],
+    location: "Tamil Nadu, Chennai",
+    fees: 549,
+    consultationType: ["Virtual"],
+    facility: "Apollo Hospital"
+  },
+  {
+    id: "9",
+    name: "Dr. Aarti Sharma",
+    photo: "/placeholder.svg",
+    specialization: "General Physician / Internal Medicine Specialist",
+    degrees: "MBBS, MD (INTERNAL MEDICINE)",
+    experience: 12,
+    languages: ["English", "Hindi"],
+    location: "Delhi, New Delhi",
+    fees: 699,
+    consultationType: ["Hospital"],
+    facility: "Apollo Hospital"
+  },
+  {
+    id: "10",
+    name: "Dr. Rajesh Kumar",
+    photo: "/placeholder.svg",
+    specialization: "General Physician",
+    degrees: "MBBS, DNB (Family Medicine)",
+    experience: 15,
+    languages: ["English", "Hindi"],
+    location: "Maharashtra, Mumbai",
+    fees: 799,
+    consultationType: ["Virtual", "Hospital"],
+    facility: "Apollo Hospital"
+  }
+];

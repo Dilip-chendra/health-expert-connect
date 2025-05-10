@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Link from 'next/link';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Search } from 'lucide-react';
 
@@ -20,7 +20,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center">
+            <Link to="/" className="flex items-center">
               <div className="bg-medical-500 text-white font-bold rounded-md px-3 py-1">
                 <span>Health</span>
                 <span className="text-xs bg-white text-medical-700 px-1 rounded ml-1">PRO</span>
@@ -56,7 +56,7 @@ const Header = () => {
             {menuItems.map((item) => (
               <li key={item.name} className="flex-shrink-0">
                 <Link 
-                  href={item.href}
+                  to={item.href}
                   className={`hover:text-medical-600 ${
                     item.name === 'Find Doctors' ? 'text-medical-600 font-medium' : 'text-gray-700'
                   }`}

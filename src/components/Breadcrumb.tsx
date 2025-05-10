@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Link from 'next/link';
+import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 
 interface BreadcrumbItem {
@@ -29,7 +29,7 @@ const Breadcrumb = ({ items }: BreadcrumbProps) => {
               </span>
             ) : (
               <Link
-                href={item.href}
+                to={item.href}
                 className="text-medical-500 hover:text-medical-700"
               >
                 {item.label}
